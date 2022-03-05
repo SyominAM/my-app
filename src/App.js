@@ -38,7 +38,8 @@ class App extends Component {
 
   render() {
     const divStyle = {
-      textAlign: 'center'
+      textAlign: 'left  ',
+      backgroundColor: '#FFCBDB'
     }
 
     let cars = null
@@ -65,7 +66,14 @@ class App extends Component {
           onClick={this.toggleCarsHandler}
         >Toggle cars</button>
 
-        { cars }
+<div style={{
+  margin: 'auto',
+  width: 400,
+  paddingTop: 20
+}}>        
+  { cars }
+</div>
+
       </div>
     );
   }
